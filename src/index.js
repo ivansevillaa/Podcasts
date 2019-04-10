@@ -1,7 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-const element = <h1>Podcasts xd</h1>
+import App from './components/App.jsx'
+
 const container = document.getElementById('app')
 
-render(element, container);
+render(<App />, container);
