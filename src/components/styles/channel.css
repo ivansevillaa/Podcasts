@@ -1,0 +1,27 @@
+.Channel {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.Channel:hover .Channel-cover {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+.Channel-image {
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+    width: 100%;
+}
+  
+.Channel-title {
+    cursor: default;
+    margin: 5px 0 0 0;
+    color: #44546b;
+    white-space: normal;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: center;
+}

@@ -4,14 +4,16 @@ import { BrowserRouter, Switch, Route} from 'react-router-dom'
 import '../global.css'
 
 import Layout from './Layout.jsx'
-import Home from '../pages/Home.jsx'
+import HomeContainer from '../pages/HomeContainer.jsx'
+import ChannelContainer from '../pages/ChannelContainer.jsx'
 
 function App(props) {
     return(
         <BrowserRouter>
             <Layout>
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/" component={ HomeContainer } />
+                    <Route exact path="/channel" component={ ChannelContainer } />
                 </Switch>
             </Layout>
         </BrowserRouter>

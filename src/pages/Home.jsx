@@ -1,8 +1,12 @@
 import React from 'react'
 
+import './styles/home.css'
+
 function Home(props) {
     return(
-        <h1>Heyy soy el home</h1>
+        <div className="Home">
+            {props.children}
+        </div>
     )
 }
 

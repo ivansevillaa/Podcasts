@@ -2,7 +2,7 @@
     width: 100%;
     background: #8756ca;  
     display: flex;
-    justify-content: flex-end;  
+    justify-content: flex-start;  
     box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
 }
 
@@ -13,10 +13,12 @@
     text-decoration: none;
     cursor: auto;
     padding: .2em .5em;
-}
-
-.Navbar-link p {
     cursor: pointer;
     margin-right: 1em;
+}
+
+.Navbar-logo {
+    width: 50px;
+    height: 50px;
 }
 
