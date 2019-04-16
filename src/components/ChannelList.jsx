@@ -2,7 +2,7 @@ import React from 'react'
 
 import './styles/channel-list.css'
 
-import Channel from '../components/Channel.jsx'
+import Channel from './Channel.jsx'
 
 function ChannelList(props) {
     const { channels } = props
@@ -12,6 +12,7 @@ function ChannelList(props) {
                 return(
                     <Channel
                         key={ item.id }
+                        id={ item.id }
                         image={ item.urls.logo_image.original }
                         title={ item.title }
                     />
