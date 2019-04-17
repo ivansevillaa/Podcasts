@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import Spinner from '../components/Spinner.jsx'
 import Channel from './Channel.jsx'
+import PodcastsList from '../components/PodcastsList.jsx'
 
 class ChannelContainer extends Component {
 
@@ -49,7 +50,7 @@ class ChannelContainer extends Component {
     fetchSeries = async () => {
         this.setState({loading: true, error: null})
         try {
-            const request = await fetch('https://api.audioboom.com/channels/4702115/child_channels')
+            const request = await fetch(`https://api.audioboom.com/channels/${this.props.match.params.channelId}/child_channels`)
             const dataSeries =  await request.json()
             this.setState({loading: false, dataSeries: dataSeries})
         } catch(error) {
@@ -60,7 +61,7 @@ class ChannelContainer extends Component {
     fetchAudioClip = async () => {
         this.setState({loading: true, error: null})
         try {
-            const request = await fetch('https://api.audioboom.com/channels/4702115/audio_clips')
+            const request = await fetch(`https://api.audioboom.com/channels/${this.props.match.params.channelId}/audio_clips`)
             const dataAudioClip =  await request.json()
             this.setState({loading: false, dataAudioClip: dataAudioClip})
         } catch(error) {
@@ -82,7 +83,7 @@ class ChannelContainer extends Component {
                 banner={ this.state.dataChannel.body.channel.urls.banner_image.original }
                 channelTitle={ this.state.dataChannel.body.channel.title }
             > 
-                
+                <PodcastsList podcasts={ this.state.dataAudioClip.body.audio_clips }/>
             </Channel>
         )
     }
