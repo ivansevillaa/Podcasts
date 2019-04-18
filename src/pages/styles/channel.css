@@ -1,3 +1,8 @@
+.ChannelPage-content {
+    display: flex;
+    justify-content: center;
+}
+
 .ChannelPage-banner img {
     width: 100%;
 }

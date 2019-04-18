@@ -1,3 +1,7 @@
+.PodcastsList {
+    max-width: 680px;
+}
+
 .PodcastsList h3 {
     text-align: center;
 }
