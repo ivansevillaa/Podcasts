@@ -10,7 +10,6 @@ function PodcastsList(props) {
         <div className="PodcastsList">
             <h3>Last Podcasts</h3>
             { podcasts.map((item) => {
-                console.log(item)
                 return(
                     <Podcast 
                         key={ item.id }
@@ -18,6 +17,7 @@ function PodcastsList(props) {
                         duration={ item.duration }
                         imagePodcast={ item.urls.image }
                         imageChannel={ item.channel.urls.logo_image.original }
+                        handleClick={ props.handleClick }
                     />
                 )
             })}

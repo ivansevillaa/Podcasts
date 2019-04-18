@@ -5,7 +5,10 @@ import './styles/podcast.css'
 function Podcast(props) {
     const { title, duration, imagePodcast, imageChannel } = props
     return(
-        <div className="Podcast">
+        <div 
+            className="Podcast"
+            onClick={ props.handleClick }
+        >
             <img 
                 src={ imagePodcast || imageChannel } 
                 alt="podcast-logo"

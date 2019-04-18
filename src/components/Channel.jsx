@@ -7,7 +7,7 @@ function Channel(props) {
     const { image, title, id } = props
     return(
         <div className="Channel">
-            <Link to={`/channel/${id}`}>
+            <Link to={`/${id}`} >
                 <img className="Channel-image" src={ image } alt="logo-channel"/>
             </Link>
             <h3 className="Channel-title">{ title }</h3>

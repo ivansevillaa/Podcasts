@@ -13,7 +13,7 @@ function App(props) {
             <Layout>
                 <Switch>
                     <Route exact path="/" component={ HomeContainer } />
-                    <Route exact path="/channel/:channelId" component={ ChannelContainer } />
+                    <Route exact path="/:channelId" component={ ChannelContainer } />
                 </Switch>
             </Layout>
         </BrowserRouter>
