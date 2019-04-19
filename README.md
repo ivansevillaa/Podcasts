@@ -18,5 +18,6 @@ Podcast app integrated with the AudioBoom API
 
 ## TODO
 
-* Deploy a production react app
 * Add series in the channel page
+* Add a search
+* Deploy a production react app
