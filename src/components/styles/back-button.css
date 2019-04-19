@@ -1,0 +1,10 @@
+.BackButton {
+    background: none;
+    border: none;
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+}

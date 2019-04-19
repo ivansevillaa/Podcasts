@@ -1,0 +1,7 @@
+.Player {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background: #8756ca;
+    color: white;
+}

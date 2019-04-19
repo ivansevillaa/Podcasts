@@ -14,10 +14,12 @@ function PodcastsList(props) {
                     <Podcast 
                         key={ item.id }
                         title={ item.title }
+                        channelTitle={ item.channel.title }
                         duration={ item.duration }
                         imagePodcast={ item.urls.image }
                         imageChannel={ item.channel.urls.logo_image.original }
-                        handleClick={ props.handleClick }
+                        audio={ item.urls.high_mp3 }
+                        openModal={ props.handleOpenModal }
                     />
                 )
             })}

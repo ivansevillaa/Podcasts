@@ -5,6 +5,7 @@ import Channel from './Channel.jsx'
 import PodcastsList from '../components/PodcastsList.jsx'
 import ModalContainer from '../components/ModalContainer.jsx'
 import Modal from '../components/Modal.jsx'
+import PlayerContainer from '../components/PlayerContainer.jsx'
 
 class ChannelContainer extends Component {
 
@@ -72,8 +73,12 @@ class ChannelContainer extends Component {
         }
     }
 
-    handleModalClick = () => {
-        this.setState({ modalVisibility: !this.state.modalVisibility })
+    handleOpenModal = (podcast) => {
+        this.setState({ 
+            modalVisibility: !this.state.modalVisibility,
+            podcast: podcast
+        })
+        console.log(podcast)
     }
 
     render() {
@@ -94,15 +99,16 @@ class ChannelContainer extends Component {
                     <SeriesList /> 
                 )} */}
                 <PodcastsList
-                    handleClick={ this.handleModalClick } 
+                    handleOpenModal={ this.handleOpenModal } 
                     podcasts={ this.state.dataAudioClip.body.audio_clips } 
                 />
                 { this.state.modalVisibility && 
                     <ModalContainer>
-                        <Modal
-                            handleClick={ this.handleModalClick }
-                        >
-                            <h1>Hey everyone</h1>
+                        <Modal>
+                            <PlayerContainer 
+                                handleClick={ this.handleOpenModal }
+                                podcast={ this.state.podcast }
+                            />
                         </Modal>
                     </ModalContainer> 
                 }

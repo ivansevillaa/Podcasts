@@ -6,7 +6,6 @@ function Modal(props) {
     return(
         <div className="Modal">
             { props.children }
-            <button onClick={ props.handleClick } >Cerrar</button>
         </div>
     )
 }
