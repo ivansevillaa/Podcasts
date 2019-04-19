@@ -4,19 +4,19 @@ Podcast app integrated with the AudioBoom API
 
 ## Preview
 
-![screenshot1](https://github.com/ivansevillaa/ivanMovies/blob/master/screenshots/screenshot1.png)    
+![screenshot1](https://github.com/ivansevillaa/Podcasts/blob/master/screenshots/screenshot1.png)    
 
-![screenshot2](https://github.com/ivansevillaa/ivanMovies/blob/master/screenshots/screenshot2.png)  
+![screenshot2](https://github.com/ivansevillaa/Podcasts/blob/master/screenshots/screenshot2.png)  
 
-![screenshot3](https://github.com/ivansevillaa/ivanMovies/blob/master/screenshots/screenshot3.png) 
+![screenshot3](https://github.com/ivansevillaa/Podcasts/blob/master/screenshots/screenshot3.png) 
 
 ## Try it
 
-    * Clone or download this repo
-    * npm install to install the dependencies
-    * npm run start to dev environment
+* `Clone or download` this repo
+* `npm install` to install the dependencies
+* `npm run start` to dev environment
 
 ## TODO
 
-    * Deploy a production react app
-    * Add series in the channel page
+* Deploy a production react app
+* Add series in the channel page
